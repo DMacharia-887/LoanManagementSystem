@@ -1,0 +1,1 @@
+This is a school project regarding object orientation. It is a loan management sysytem with functionality and simplicity in mind. If you want to use it, please ensure you have XAMMP on your computer to have a database. I have shared a sql script in order for one facilitate a database. 
