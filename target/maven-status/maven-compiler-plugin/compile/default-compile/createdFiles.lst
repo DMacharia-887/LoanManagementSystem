@@ -1,0 +1,10 @@
+com\usiu\loan\controller\RegisterClientController.class
+com\usiu\loan\model\Client.class
+com\usiu\loan\MainApp.class
+com\usiu\loan\controller\DashboardController.class
+com\usiu\loan\controller\LoanRepaymentController.class
+com\usiu\loan\controller\LoanApplicationController.class
+com\usiu\loan\controller\LoginController.class
+com\usiu\loan\controller\LoanApprovalController.class
+com\usiu\loan\database\DatabaseHelper.class
+com\usiu\loan\controller\ViewClientsController.class

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.usiu.loan.controller.LoanRepaymentController">
+    <top>
+        <Label text="Loan Repayment" style="-fx-font-size: 24px; -fx-padding: 20px;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <ComboBox fx:id="loanComboBox" promptText="Select Loan" prefWidth="250"/>
+            <TextField fx:id="repaymentAmountField" promptText="Repayment Amount" prefWidth="250"/>
+            <DatePicker fx:id="repaymentDatePicker" promptText="Repayment Date" prefWidth="250"/>
+            <Button text="Submit Repayment" onAction="#handleRepaymentSubmit" prefWidth="250"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back to Dashboard" onAction="#handleBackToDashboard" BorderPane.alignment="CENTER" style="-fx-padding: 10px;" prefWidth="200"/>
+    </bottom>
+</BorderPane>

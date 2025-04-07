@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.usiu.loan.controller.ViewClientsController">
+    <top>
+        <Label text="View Clients" style="-fx-font-size: 24px; -fx-padding: 20px;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <TableView fx:id="clientsTable" prefWidth="600" prefHeight="400">
+                <columns>
+                    <TableColumn text="ID" fx:id="colId"/>
+                    <TableColumn text="Full Name" fx:id="colFullName"/>
+                    <TableColumn text="Phone Number" fx:id="colPhoneNumber"/>
+                    <TableColumn text="Email" fx:id="colEmail"/>
+                    <TableColumn text="ID Number" fx:id="colIdNumber"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back to Dashboard" onAction="#handleBackToDashboard" BorderPane.alignment="CENTER" style="-fx-padding: 10px;" prefWidth="200"/>
+    </bottom>
+</BorderPane>

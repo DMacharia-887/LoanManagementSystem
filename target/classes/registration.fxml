@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.usiu.loan.controller.RegisterClientController">
+    <top>
+        <Label text="Register Client" style="-fx-font-size: 24px; -fx-padding: 20px;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 20;">
+            <TextField fx:id="fullNameField" promptText="Full Name" prefWidth="250"/>
+            <TextField fx:id="emailField" promptText="Email Address" prefWidth="250"/>
+            <TextField fx:id="phoneField" promptText="Phone Number" prefWidth="250"/>
+            <TextField fx:id="idNumberField" promptText="ID/Passport Number" prefWidth="250"/>
+            <Button text="Submit" onAction="#handleSubmit" prefWidth="250"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Back to Dashboard" onAction="#handleBackToDashboard" BorderPane.alignment="CENTER" style="-fx-padding: 10px;" prefWidth="200"/>
+    </bottom>
+</BorderPane>

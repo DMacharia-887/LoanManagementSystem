@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.usiu.loan.controller.DashboardController">
+    <top>
+        <Label text="Loan Management Dashboard" style="-fx-font-size: 24px; -fx-padding: 20px;" BorderPane.alignment="CENTER"/>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="15">
+            <Button text="Register Client" fx:id="btnRegisterClient" prefWidth="200"/>
+            <Button text="View Clients" onAction="#handleViewClients" prefWidth="200"/>
+            <Button text="Remove Client" onAction="#openDeleteClient" prefWidth="200"/>
+            <Button text="Apply for Loan" fx:id="btnApplyLoan" prefWidth="200"/>
+            <Button text="Approve Loan" onAction="#openLoanApproval" prefWidth="200"/>
+            <Button fx:id="btnRepayments" text="Submit Repayment" onAction="#handleRepaymentSubmit" prefWidth="200"/>
+            <Button text="Download Loan Report" fx:id="btnReports" prefWidth="200"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Button text="Logout" fx:id="btnLogout" onAction="#handleLogout" BorderPane.alignment="CENTER" style="-fx-padding: 10px;" prefWidth="200"/>
+    </bottom>
+</BorderPane>

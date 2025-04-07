@@ -1,0 +1,103 @@
+/* Root styles for the entire application */
+.root {
+    font-family: "Arial"; /* Standard property */
+    -fx-font-family: "Arial"; /* JavaFX-specific property */
+    background-color: #f4f4f9; /* Standard property */
+    -fx-background-color: linear-gradient(to bottom, #d4f8d4, #ffffff); /* Light green fading into white */
+}
+
+/* Button styles */
+.button {
+    background-color: #4CAF50; /* Standard property */
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #45a049); /* JavaFX-specific property */
+    color: white; /* Standard property */
+    -fx-text-fill: white; /* JavaFX-specific property */
+    font-size: 14px; /* Standard property */
+    -fx-font-size: 14px; /* JavaFX-specific property */
+    padding: 10px; /* Standard property */
+    -fx-padding: 10px; /* JavaFX-specific property */
+    border-radius: 5px; /* Standard property */
+    -fx-border-radius: 5px; /* JavaFX-specific property */
+    -fx-background-radius: 5px; /* JavaFX-specific property */
+    cursor: pointer; /* Standard property */
+    -fx-cursor: hand; /* JavaFX-specific property */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2); /* JavaFX-specific shadow effect */
+}
+
+.button:hover {
+    background-color: #45a049; /* Standard property */
+    -fx-background-color: linear-gradient(to bottom, #45a049, #3e8e41); /* JavaFX-specific property */
+    /*transform: scale(1.05); /* Standard property */
+    -fx-scale-x: 1.05; /* JavaFX-specific property */
+    -fx-scale-y: 1.05; /* JavaFX-specific property */
+}
+
+/* Label styles */
+.label {
+    color: #333333; /* Standard property */
+    -fx-text-fill: #333333; /* JavaFX-specific property */
+    font-size: 16px; /* Standard property */
+    -fx-font-size: 16px; /* JavaFX-specific property */
+    font-weight: bold; /* Standard property */
+    -fx-font-weight: bold; /* JavaFX-specific property */
+}
+
+/* VBox styles for consistent spacing */
+.vbox {
+    gap: 15px; /* Standard property */
+    -fx-spacing: 15px; /* JavaFX-specific property */
+    -fx-alignment: center; /* JavaFX-specific property */
+}
+
+/* HBox styles for consistent spacing */
+.hbox {
+    gap: 10px; /* Standard property */
+    -fx-spacing: 10px; /* JavaFX-specific property */
+    -fx-alignment: center; /* JavaFX-specific property */
+}
+
+/* TableView styles */
+.table-view {
+    background-color: #ffffff; /* Standard property */
+    -fx-background-color: #ffffff; /* JavaFX-specific property */
+    border-color: #dddddd; /* Standard property */
+    -fx-border-color: #dddddd; /* JavaFX-specific property */
+    border-width: 1px; /* Standard property */
+    -fx-border-width: 1px; /* JavaFX-specific property */
+    padding: 10px; /* Standard property */
+    -fx-padding: 10px; /* JavaFX-specific property */
+}
+
+.table-view .column-header {
+    background-color: #4CAF50; /* Standard property */
+    -fx-background-color: #4CAF50; /* JavaFX-specific property */
+    color: white; /* Standard property */
+    -fx-text-fill: white; /* JavaFX-specific property */
+    font-weight: bold; /* Standard property */
+    -fx-font-weight: bold; /* JavaFX-specific property */
+}
+
+.table-view .cell {
+    background-color: #f9f9f9; /* Standard property */
+    -fx-background-color: #f9f9f9; /* JavaFX-specific property */
+}
+
+.table-view .cell:odd {
+    background-color: #ffffff; /* Standard property */
+    -fx-background-color: #ffffff; /* JavaFX-specific property */
+}
+
+/* Tooltip styles */
+.tooltip {
+    background-color: #333333; /* Standard property */
+    -fx-background-color: #333333; /* JavaFX-specific property */
+    color: white; /* Standard property */
+    -fx-text-fill: white; /* JavaFX-specific property */
+    font-size: 12px; /* Standard property */
+    -fx-font-size: 12px; /* JavaFX-specific property */
+    padding: 5px; /* Standard property */
+    -fx-padding: 5px; /* JavaFX-specific property */
+    border-radius: 5px; /* Standard property */
+    -fx-border-radius: 5px; /* JavaFX-specific property */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2); /* JavaFX-specific shadow effect */
+}
